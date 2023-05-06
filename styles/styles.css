@@ -57,6 +57,10 @@ body {
   font-size: 32px;
 }
 
+.font__size--36 {
+  font-size: 36px;
+}
+
 .font__weight--500 {
   font-weight: 500;
 }
@@ -155,6 +159,11 @@ body {
   margin-right: 385px;
 }
 
+.header__svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .header__navigation__element,
 .header__navigation__element:active,
 .header__navigation__element:visited {
@@ -207,7 +216,7 @@ body {
 /* INDEX.HTML */
 /* Hero Section */
 .main__hero-section {
-  background-color: var(--brand-gray);
+  background: url(/images/hero-bg.jpg) var(--brand-gray);
   color: var(--text-white);
 
   display: flex;
@@ -239,6 +248,17 @@ body {
 }
 
 /* Why us */
+
+.why-us__svg {
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  height: auto;
+  width: 270px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
 .main__why-us {
   background-color: var(--background-white);
 
@@ -389,4 +409,60 @@ body {
 
 .listings__left--margins {
   margin-left: 215px;
+}
+
+/* ------------------------------ HW4 ------------------------------ */
+
+.main__regular-customers {
+  text-align: center;
+  max-width: 1600px;
+  max-height: 400px;
+}
+
+.main__regular-customers__heading {
+  margin-top: 100px;
+}
+.regular-customers__container {
+  justify-content: center;
+  gap: 30px;
+}
+
+.regular-customers {
+  width: 170px;
+  height: 100px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 16px 32px;
+}
+
+.footer__find-us {
+  margin-left: 70px;
+}
+
+.footer__find-us__heading {
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.find-us__svg {
+  width: 45px;
+  height: 45px;
+
+  overflow: visible;
+  border-radius: 100%;
+
+  margin-right: 10px;
+  padding: 12px;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.svg-blue {
 }
