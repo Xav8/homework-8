@@ -124,6 +124,13 @@ body {
   padding-bottom: 20px;
   margin: 50px 30px 30px 30px;
   width: 370px;
+
+  box-sizing: border-box;
+}
+
+.border:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Logo */
@@ -159,6 +166,7 @@ body {
 }
 
 .header__svg {
+  margin-top: 32px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -202,7 +210,6 @@ body {
   text-decoration: none;
 
   padding: 32px 0 32px 0;
-  margin-right: 40px;
 }
 
 .contacts__address {
@@ -260,8 +267,8 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
 
-  height: auto;
-  width: 270px;
+  max-height: 120px;
+  max-width: 270px;
   margin-bottom: 30px;
   padding: 25px 100px;
 }
@@ -431,8 +438,8 @@ body {
 /* ------------------------------ HW4 ------------------------------ */
 
 .our-team__svg {
-  width: 45px;
-  height: 45px;
+  max-width: 45px;
+  max-height: 45px;
 
   overflow: visible;
   border-radius: 100%;
@@ -440,7 +447,7 @@ body {
   margin-top: 15px;
   padding: 12px;
 
-  color: #afb1b8;
+  fill: #afb1b8;
 }
 
 .main__regular-customers {
@@ -464,6 +471,8 @@ body {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  fill: #afb1b8;
 
   margin-top: 50px;
   margin-bottom: 100px;
@@ -493,18 +502,36 @@ body {
   padding: 12px;
 
   background: rgba(255, 255, 255, 0.1);
+
+  fill: #ececec;
 }
 
-.svg-blue {
+.header__anchor {
+  width: 250px;
+  height: 50px;
+
+  margin-right: 40px;
+  margin-bottom: 32px;
+}
+
+.svg--fix {
+  width: 20px;
+  height: 20px;
+}
+
+.svg-blue,
+.svg-blue:active {
+  cursor: pointer;
+  background-color: var(--background-secondary);
+  line-height: 1.6;
 }
 
 .svg-blue:hover,
 .svg-blue:focus {
-  color: var(--brand-blue);
+  background-color: #2195f3;
+  color: var(--text-white);
 }
 
-.svg-blue:active,
-.svg-blue:visited {
-  cursor: pointer;
-  color: var(--text-default);
+.svg-blue {
+  background: rgba(255, 255, 255, 0.1);
 }

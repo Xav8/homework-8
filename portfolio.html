@@ -27,43 +27,48 @@
     <div class="container">
       <!-- Header -->
       <header class="header flex border--head">
-        <a class="logo font__weight--700 letter__spacing--medium"
+        <a class="logo font__weight--700"
           ><span class="logo--blue">Web</span>Studio</a
         >
         <nav>
           <ul class="header__navigation flex list">
             <li>
               <a
-                class="header__navigation__element font__weight--500 letter__spacing--low"
+                class="header__navigation__element font__weight--500"
                 href="./index.html"
                 >Studio</a
               >
             </li>
             <li>
               <a
-                class="header__navigation__element font__weight--500 letter__spacing--low"
+                class="header__navigation__element font__weight--500"
                 href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a
-                class="header__navigation__element font__weight--500 letter__spacing--low"
+              <a class="header__navigation__element font__weight--500"
                 >Contacts</a
               >
             </li>
           </ul>
         </nav>
-        <a
-          href="mailto:info@devstudio.com"
-          class="contacts--top font__weight--500 font__color--secondary letter__spacing--low"
-          >info@devstudio.com</a
-        >
-        <a
-          href="tel:+12127724150"
-          class="contacts--top font__weight--500 font__color--secondary letter__spacing--low"
-          >+1&nbsp;212-772-4150</a
-        >
+        <a href="mailto:info@devstudio.com" class="header__anchor flex">
+          <svg class="header__svg svg-blue svg--fix">
+            <use href="./images/icons.svg#envelope"></use>
+          </svg>
+          <span class="contacts--top font__weight--500 font__color--secondary"
+            >info@devstudio.com</span
+          >
+        </a>
+        <a href="tel:+12127724150" class="header__anchor flex">
+          <svg class="header__svg svg-blue svg--fix">
+            <use href="./images/icons.svg#smartphone"></use>
+          </svg>
+          <span class="contacts--top font__weight--500 font__color--secondary"
+            >+1&nbsp;212-772-4150</span
+          >
+        </a>
       </header>
 
       <!-- Main section -->
@@ -284,22 +289,56 @@
       </main>
 
       <!-- Footer -->
-      <footer class="footer">
-        <a class="logo logo--light font__weight--700"
-          ><span class="logo--blue">Web</span>Studio</a
-        >
-        <br />
-        <address class="contacts__address">695 Park Ave, NY 10065, USA</address>
-        <br />
-        <a
-          href="mailto:info@devstudio.com"
-          class="contacts font__color--secondary"
-          >info@devstudio.com</a
-        >
-        <br />
-        <a href="tel:+12127724150" class="contacts font__color--secondary"
-          >+1&nbsp;212-772-4150</a
-        >
+      <footer class="footer flex">
+        <div>
+          <a class="logo logo--light font__weight--700"
+            ><span class="logo--blue">Web</span>Studio</a
+          >
+          <address class="contacts__address">
+            695 Park Ave, NY 10065, USA
+          </address>
+          <br />
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts font__color--secondary"
+            >info@devstudio.com</a
+          >
+          <br />
+          <a href="tel:+12127724150" class="contacts font__color--secondary"
+            >+1&nbsp;212-772-4150</a
+          >
+        </div>
+        <!-- Find us -->
+        <div class="footer__find-us">
+          <h3
+            class="footer__find-us__heading font__size--16 font__weight--700 letter__spacing--medium"
+          >
+            Find us on
+          </h3>
+          <a href="https://www.instagram.com">
+            <svg class="find-us__svg svg-blue">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+
+          <a href="https://twitter.com">
+            <svg class="find-us__svg svg-blue">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com">
+            <svg class="find-us__svg svg-blue">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com">
+            <svg class="find-us__svg svg-blue">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </div>
       </footer>
     </div>
   </body>
