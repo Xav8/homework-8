@@ -16,6 +16,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Variables */
 :root {
   /* Brand colors */
@@ -166,7 +170,6 @@ body {
 }
 
 .header__svg {
-  margin-top: 32px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -174,6 +177,9 @@ body {
 .header__navigation__element,
 .header__navigation__element:active,
 .header__navigation__element:visited {
+  display: block;
+  position: relative;
+
   cursor: pointer;
   color: var(--text-default);
   line-height: 1;
@@ -205,11 +211,14 @@ body {
 }
 
 .contacts--top {
+  display: flex;
+  flex-wrap: wrap;
+
   cursor: pointer;
   line-height: 1;
   text-decoration: none;
 
-  padding: 32px 0 32px 0;
+  align-content: center;
 }
 
 .contacts__address {
@@ -350,6 +359,10 @@ body {
   line-height: 2.25;
 }
 
+.main__our-team__caption a {
+  text-decoration: none;
+}
+
 .main__our-team__caption div {
   margin-left: 32px;
   margin-right: 32px;
@@ -438,16 +451,14 @@ body {
 /* ------------------------------ HW4 ------------------------------ */
 
 .our-team__svg {
-  max-width: 45px;
-  max-height: 45px;
+  width: 45px;
+  height: 45px;
 
   overflow: visible;
   border-radius: 100%;
 
   margin-top: 15px;
   padding: 12px;
-
-  fill: #afb1b8;
 }
 
 .main__regular-customers {
@@ -492,26 +503,31 @@ body {
 }
 
 .find-us__svg {
+  color: #eeeeee;
+
   width: 45px;
   height: 45px;
 
   overflow: visible;
   border-radius: 100%;
 
-  margin-right: 10px;
   padding: 12px;
 
   background: rgba(255, 255, 255, 0.1);
+}
 
-  fill: #ececec;
+.find-us__svg:not(:last-child) {
+  margin-right: 10px;
 }
 
 .header__anchor {
-  width: 250px;
-  height: 50px;
+  flex-wrap: wrap;
+  align-content: center;
+
+  width: 180px;
+  height: 30px;
 
   margin-right: 40px;
-  margin-bottom: 32px;
 }
 
 .svg--fix {
@@ -519,19 +535,87 @@ body {
   height: 20px;
 }
 
+.svg-blue a,
 .svg-blue,
 .svg-blue:active {
   cursor: pointer;
-  background-color: var(--background-secondary);
-  line-height: 1.6;
+  color: var(--text-secondary);
 }
 
 .svg-blue:hover,
 .svg-blue:focus {
-  background-color: #2195f3;
-  color: var(--text-white);
+  color: #2195f3;
 }
 
 .svg-blue {
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* tema 4 ultimate save */
+
+.svg-blue-nonhead,
+.svg-blue-nonhead:active {
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.svg-blue-nonhead:hover,
+.svg-blue-nonhead:focus {
+  color: #eeeeee;
+  background-color: #2195f3;
+}
+
+.svg-blue-nonhead {
+  color: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.svg-blue-footer,
+.svg-blue-footer:active {
+  cursor: pointer;
+}
+
+.svg-blue-footer:hover,
+.svg-blue-footer:focus {
+  color: #2195f3;
+}
+
+.svg-blue-footer {
+}
+
+.svg-blue-rc a,
+.svg-blue-rc,
+.svg-blue-rc:active {
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.svg-blue-rc:hover,
+.svg-blue-rc:focus {
+  color: #2195f3;
+  border: 1px solid #2195f3;
+  border-radius: 4px;
+}
+
+.svg-blue-rc {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.header-underline {
+  display: none;
+  position: absolute;
+
+  content: "";
+  width: 100%;
+  height: 4px;
+
+  background-color: #2195f3;
+  border-radius: 10px;
+
+  margin-top: 38px;
+}
+
+.header__navigation__element:hover .header-underline,
+.header__navigation__element:focus {
+  display: block;
 }
