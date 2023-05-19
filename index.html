@@ -90,6 +90,7 @@
               YOUR BUSINESS
             </h1>
             <button
+              data-modal-open
               type="button"
               class="main__hero-section__button font__weight--700"
             >
@@ -178,21 +179,36 @@
             <span>What we do</span>
           </h2>
           <figure>
-            <img
+            <div class="what-we-do__container-overlay">
+              <img
               src="./images/img-1.jpg"
               alt="Programming & Development"
               width="370"
-            />
+              />
+              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+                <p>DESKTOP APPS</p>
+              </div>
+            </div>
           </figure>
           <figure>
-            <img
+            <div class="what-we-do__container-overlay">
+              <img
               src="./images/img-2.jpg"
               alt="Mobile Technologies"
               width="370"
-            />
+              />
+              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+                <p>Mobile APPS</p>
+              </div>
+            </div>
           </figure>
           <figure>
-            <img src="./images/img-3.jpg" alt="Arts & Design" width="370" />
+            <div class="what-we-do__container-overlay">
+              <img src="./images/img-3.jpg" alt="Arts & Design" width="370" />
+              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+                <p>DESIGN SOLUTIONS</p>
+              </div>
+            </div>
           </figure>
         </article>
         <!-- Our team -->
@@ -445,5 +461,16 @@
         </div>
       </footer>
     </div>
+
+    <!-- Modal -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        Continutul modalului
+      
+      </div> 
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
