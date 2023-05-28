@@ -467,50 +467,58 @@
         <button class="close-btn" data-modal-close>&times;</button>
 
         <!-- Modal form-->
-        <form action=""></form>
-         <h2>Leave your information and we'll call you back</h2>
-        <label for="form-1__name">
-          <div>
-            <input type="text">
-              <svg>
-                <use></use>
-              </svg>
-           </div>
-        </label>
+        <div class="form-1__container">
+          <form class="form-1" action="">
+            <h2 class="form-1__title font__weight--700 font__size--20">Leave your information and we'll call you back</h2>
+            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__name">
+              Name
+              <div class="form-1__label__input-container flex">
+                <input class="form-1__label__input" type="text">
+                  <svg class="form-1__label__input__svg">
+                    <use href="./images/icons.svg#form-person"></use>
+                  </svg>
+              </div>
+            </label>
 
-        <label for="form-1__telephone">
-          <div>
-             <input type="tel">
-              <svg>
-                <use></use>
-              </svg>
-          </div>
-        </label>
+            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__telephone">
+              Telephone
+              <div class="form-1__label__input-container flex">
+                <input class="form-1__label__input" type="tel">
+                  <svg class="form-1__label__input__svg">
+                    <use href="./images/icons.svg#form-phone"></use>
+                  </svg>
+              </div>
+            </label>
 
-         <label for="form-1__email">
-          <div>
-             <input type="email">
-              <svg>
-                <use></use>
-              </svg>
-          </div>
-        </label>
+            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__email">
+              E-mail
+              <div class="form-1__label__input-container flex">
+                <input class="form-1__label__input" type="email">
+                  <svg class="form-1__label__input__svg">
+                    <use href="./images/icons.svg#form-email"></use>
+                  </svg>
+              </div>
+            </label>
 
 
-        <label for="form-1__comment">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </label>
+            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__comment">
+              Comments
+              <textarea class="form-1__label__textarea" name="" id="" cols="30" rows="10"></textarea>
+            </label>
 
-        <div>
-          <label for="form-1__terms-and-conditions">
-            <div>
-             <input type="checkbox">
-              <svg>
-                <use></use>
-              </svg>
+            <div class="form-1__checkbox-label font__size--14 font__color--secondary flex">
+              <label class="form-1__checkbox-label" for="form-1__terms-and-conditions">
+                <div>
+                <input class="form-1__checkbox-label__checkbox" type="checkbox">
+                  <svg class="form-1__checkbox-label__checkbox__checkmark">
+                    <use href="./images/icons.svg#checkmark"></use>
+                  </svg>
+                </div>
+              </label>
+              <span>I agree with the letter and accept the <a class="form-1__checkbox-label__terms-and-conditions" href="#terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></span>
             </div>
-          </label>
-          <span>I agree with the letter and accept the <a class="" href="#terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></span>
+          </form>
+          <button class="form-1__button font__color--white font__size--16 font__weight--700" type="submit"> Send </button>
         </div>
       </div>
     </div>

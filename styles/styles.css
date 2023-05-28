@@ -24,12 +24,17 @@ a {
 :root {
   /* Brand colors */
   --brand-blue: #2196f3;
+  --brand-blue-hover: #188ce8;
   --brand-gray: #2f303a;
 
   /* Font colors */
   --text-default: #212121;
   --text-secondary: #757575;
   --text-white: #fff;
+  --text-black: #000;
+
+  /* svg */
+  --svg-inactive: #afb1b8;
 
   /* Background colors */
   --background-white: #fff;
@@ -47,6 +52,11 @@ body {
 }
 
 /* Reusables */
+
+.font__size--12 {
+  font-size: 12px;
+}
+
 .font__size--14 {
   font-size: 14px;
 }
@@ -57,6 +67,10 @@ body {
 
 .font__size--18 {
   font-size: 18px;
+}
+
+.font__size--20 {
+  font-size: 20px;
 }
 
 .font__size--32 {
@@ -771,4 +785,128 @@ figure.border {
   color: #2195f3;
 
   transition: var(--transition-default);
+}
+
+/* ------------------------------ HW6 ------------------------------ */
+
+.form-1__container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 8px 8px 40px 8px;
+
+  max-width: 485px;
+  max-height: 525px;
+}
+
+.form-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 32px 32px 22px 32px;
+}
+
+.form-1__title {
+  position: absolute;
+  width: 448px;
+  height: 23px;
+
+  top: 40px;
+
+  color: #212121;
+}
+
+.form-1__label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: calc(100% + 8px);
+}
+
+.form-1__label__input-container {
+  position: relative;
+}
+
+.form-1__label__input {
+  width: 448px;
+  height: 40px;
+
+  padding: 12px 12px 12px 42px;
+
+  box-sizing: border-box;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+
+  transition: border-color var(--transition-default);
+}
+
+.form-1__label__input__svg {
+  max-width: 18px;
+  max-height: 18px;
+
+  transition: color var(--transition-default);
+  position: absolute;
+  color: var(--text-black);
+
+  top: 11px;
+  left: 12px;
+}
+
+.form-1__label__textarea {
+  resize: none;
+
+  height: 120px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color var(--transition-default);
+}
+
+.form-1__checkbox-label {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form-1__checkbox-label__checkbox {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid var(--text-default);
+  border-radius: 2px;
+}
+
+.form-1__checkbox-label__checkbox__checkmark {
+  transition: opacity var(--transition-default);
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+}
+
+.form-1__checkbox-label__terms-and-conditions {
+  transition: color var(--transition-default);
+}
+
+.form-1__button {
+  cursor: pointer;
+  align-self: center;
+  line-height: 2;
+  background-color: var(--brand-blue);
+
+  padding: 10px 80px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color var(--transition-default);
 }
