@@ -597,9 +597,6 @@ body {
   transition: var(--transition-default);
 }
 
-.svg-blue-footer {
-}
-
 .svg-blue-rc a,
 .svg-blue-rc,
 .svg-blue-rc:active {
