@@ -813,6 +813,7 @@ figure.border {
   height: 23px;
 
   top: 40px;
+  left: 77px;
 
   color: #212121;
 }
@@ -825,11 +826,12 @@ figure.border {
 }
 
 .form-1__label__input-container {
+  width: 408px;
   position: relative;
 }
 
 .form-1__label__input {
-  width: 448px;
+  width: 408px;
   height: 40px;
 
   padding: 12px 12px 12px 42px;
