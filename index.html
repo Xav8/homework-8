@@ -37,20 +37,19 @@
                 class="header__navigation__element font__weight--500"
                 href="./index.html"
                 >Studio
-              </a
-              >
+              </a>
             </li>
             <li>
               <a
                 class="header__navigation__element font__weight--500"
                 href="./portfolio.html"
-                >Portfolio<span class="header-underline"></span></a
-              >
+                >Portfolio<span class="header-underline"></span
+              ></a>
             </li>
             <li>
               <a class="header__navigation__element font__weight--500"
-                >Contacts<span class="header-underline"></span></a
-              >
+                >Contacts<span class="header-underline"></span
+              ></a>
             </li>
           </ul>
         </nav>
@@ -180,11 +179,13 @@
           <figure>
             <div class="what-we-do__container-overlay">
               <img
-              src="./images/img-1.jpg"
-              alt="Programming & Development"
-              width="370"
+                src="./images/img-1.jpg"
+                alt="Programming & Development"
+                width="370"
               />
-              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+              <div
+                class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700"
+              >
                 <p>DESKTOP APPS</p>
               </div>
             </div>
@@ -192,11 +193,13 @@
           <figure>
             <div class="what-we-do__container-overlay">
               <img
-              src="./images/img-2.jpg"
-              alt="Mobile Technologies"
-              width="370"
+                src="./images/img-2.jpg"
+                alt="Mobile Technologies"
+                width="370"
               />
-              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+              <div
+                class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700"
+              >
                 <p>Mobile APPS</p>
               </div>
             </div>
@@ -204,7 +207,9 @@
           <figure>
             <div class="what-we-do__container-overlay">
               <img src="./images/img-3.jpg" alt="Arts & Design" width="370" />
-              <div class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700">
+              <div
+                class="what-we-do__overlay font__color--white letter__spacing--medium font__size--14 font__weight--700"
+              >
                 <p>DESIGN SOLUTIONS</p>
               </div>
             </div>
@@ -380,7 +385,7 @@
               </svg>
             </a>
 
-            <a href=""></a>
+            <a href="">
               <svg class="regular-customers svg-blue-rc">
                 <use href="./images/icons.svg#logo3"></use>
               </svg>
@@ -461,15 +466,25 @@
         <!-- NEWSLETTER -->
         <div class="flex">
           <form action="">
-            <label for=""  class="flex-column newsletter-label">
-             <span class="font__size--14 font__weight--700 newsletter-title">SUBSCRIBE TO THE NEWSLETTER</span>
-              <input class="newsletter-input" id="footer-newsletter" type="email" placeholder="E-mail">
+            <label for="" class="flex-column newsletter-label">
+              <span class="font__size--14 font__weight--700 newsletter-title"
+                >SUBSCRIBE TO THE NEWSLETTER</span
+              >
+              <input
+                class="newsletter-input"
+                id="footer-newsletter"
+                type="email"
+                placeholder="E-mail"
+              />
             </label>
           </form>
-          <button class="newsletter-button flex" type="submit" >
-            <span class="font__size--16 font__weight--700 letter__spacing--high newsletter-button__title">Subscribe</span> 
+          <button class="newsletter-button flex" type="submit">
+            <span
+              class="font__size--16 font__weight--700 letter__spacing--high newsletter-button__title"
+              >Subscribe</span
+            >
             <svg width="24" height="24">
-              <use href="./images/icons.svg#send-paperplane" ></use>
+              <use href="./images/icons.svg#send-paperplane"></use>
             </svg>
           </button>
         </div>
@@ -484,56 +499,115 @@
         <!-- Modal form-->
         <div class="form-1__container">
           <form class="form-1" action="">
-            <h2 class="form-1__title font__weight--700 font__size--20">Leave your information and we'll call you back</h2>
-            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__name">
+            <h2 class="form-1__title font__weight--700 font__size--20">
+              Leave your information and we'll call you back
+            </h2>
+            <label
+              class="form-1__label font__size--12 font__color--secondary"
+              for="form-1__name"
+            >
               Name
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="text" required>
-                  <svg class="form-1__label__input__svg">
-                    <use href="./images/icons.svg#form-person"></use>
-                  </svg>
+                <input
+                  class="form-1__label__input form-1__blue"
+                  type="text"
+                  required
+                />
+                <svg class="form-1__label__input__svg">
+                  <use href="./images/icons.svg#form-person"></use>
+                </svg>
               </div>
             </label>
 
-            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__telephone">
+            <label
+              class="form-1__label font__size--12 font__color--secondary"
+              for="form-1__telephone"
+            >
               Telephone
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="tel" required>
-                  <svg class="form-1__label__input__svg">
-                    <use href="./images/icons.svg#form-phone"></use>
-                  </svg>
+                <input
+                  class="form-1__label__input form-1__blue"
+                  type="tel"
+                  required
+                />
+                <svg class="form-1__label__input__svg">
+                  <use href="./images/icons.svg#form-phone"></use>
+                </svg>
               </div>
             </label>
 
-            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__email">
+            <label
+              class="form-1__label font__size--12 font__color--secondary"
+              for="form-1__email"
+            >
               E-mail
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="email" required>
-                  <svg class="form-1__label__input__svg form-1__blue">
-                    <use href="./images/icons.svg#form-email"></use>
-                  </svg>
+                <input
+                  class="form-1__label__input form-1__blue"
+                  type="email"
+                  required
+                />
+                <svg class="form-1__label__input__svg">
+                  <use href="./images/icons.svg#form-email"></use>
+                </svg>
               </div>
             </label>
 
-
-            <label class="form-1__label font__size--12 font__color--secondary" for="form-1__comment">
+            <label
+              class="form-1__label font__size--12 font__color--secondary"
+              for="form-1__comment"
+            >
               Comments
-              <textarea class="form-1__label__textarea" name="" id="" cols="30" rows="10" placeholder="Enter the text"></textarea>
+              <textarea
+                class="form-1__label__textarea"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Enter the text"
+              ></textarea>
             </label>
 
-            <div class="form-1__checkbox-label font__size--14 font__color--secondary flex">
-              <label class="form-1__checkbox-label" for="form-1__terms-and-conditions">
+            <div
+              class="form-1__checkbox-label font__size--14 font__color--secondary flex"
+            >
+              <label
+                class="form-1__checkbox-label"
+                for="form-1__terms-and-conditions"
+              >
                 <div class="form-1__checkbox-label__checkbox__container">
-                  <input class="form-1__checkbox-label__checkbox" type="checkbox">
-                  <svg class="form-1__checkbox-label__checkbox__checkmark">
+                  <input
+                    class="form-1__checkbox-label__checkbox"
+                    type="checkbox"
+                    id="form-1__terms-and-conditions"
+                  />
+                  <svg
+                    class="form-1__checkbox-label__checkbox__checkmark"
+                    width="14"
+                    height="14"
+                  >
                     <use href="./images/icons.svg#checkmark"></use>
                   </svg>
                 </div>
               </label>
-              <span>I agree with the letter and accept the <a class="form-1__checkbox-label__terms-and-conditions" href="#terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></span>
+              <span
+                >I agree with the letter and accept the
+                <a
+                  class="form-1__checkbox-label__terms-and-conditions"
+                  href="#terms-and-conditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Terms and Conditions</a
+                ></span
+              >
             </div>
           </form>
-          <button class="form-1__button font__color--white font__size--16 font__weight--700" type="submit"> Send </button>
+          <button
+            class="form-1__button font__color--white font__size--16 font__weight--700"
+            type="submit"
+          >
+            Send
+          </button>
         </div>
       </div>
     </div>
