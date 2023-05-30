@@ -458,6 +458,21 @@
             </svg>
           </a>
         </div>
+        <!-- NEWSLETTER -->
+        <div class="flex">
+          <form action="">
+            <label for=""  class="flex-column newsletter-label">
+             <span class="font__size--14 font__weight--700 newsletter-title">SUBSCRIBE TO THE NEWSLETTER</span>
+              <input class="newsletter-input" id="footer-newsletter" type="email" placeholder="E-mail">
+            </label>
+          </form>
+          <button class="newsletter-button flex" type="submit" >
+            <span class="font__size--16 font__weight--700 letter__spacing--high newsletter-button__title">Subscribe</span> 
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#send-paperplane" ></use>
+            </svg>
+          </button>
+        </div>
       </footer>
     </div>
 
@@ -473,7 +488,7 @@
             <label class="form-1__label font__size--12 font__color--secondary" for="form-1__name">
               Name
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="text">
+                <input class="form-1__label__input" type="text" required>
                   <svg class="form-1__label__input__svg">
                     <use href="./images/icons.svg#form-person"></use>
                   </svg>
@@ -483,7 +498,7 @@
             <label class="form-1__label font__size--12 font__color--secondary" for="form-1__telephone">
               Telephone
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="tel">
+                <input class="form-1__label__input" type="tel" required>
                   <svg class="form-1__label__input__svg">
                     <use href="./images/icons.svg#form-phone"></use>
                   </svg>
@@ -493,8 +508,8 @@
             <label class="form-1__label font__size--12 font__color--secondary" for="form-1__email">
               E-mail
               <div class="form-1__label__input-container flex">
-                <input class="form-1__label__input" type="email">
-                  <svg class="form-1__label__input__svg">
+                <input class="form-1__label__input" type="email" required>
+                  <svg class="form-1__label__input__svg form-1__blue">
                     <use href="./images/icons.svg#form-email"></use>
                   </svg>
               </div>
@@ -503,13 +518,13 @@
 
             <label class="form-1__label font__size--12 font__color--secondary" for="form-1__comment">
               Comments
-              <textarea class="form-1__label__textarea" name="" id="" cols="30" rows="10"></textarea>
+              <textarea class="form-1__label__textarea" name="" id="" cols="30" rows="10" placeholder="Enter the text"></textarea>
             </label>
 
             <div class="form-1__checkbox-label font__size--14 font__color--secondary flex">
               <label class="form-1__checkbox-label" for="form-1__terms-and-conditions">
-                <div>
-                <input class="form-1__checkbox-label__checkbox" type="checkbox">
+                <div class="form-1__checkbox-label__checkbox__container">
+                  <input class="form-1__checkbox-label__checkbox" type="checkbox">
                   <svg class="form-1__checkbox-label__checkbox__checkmark">
                     <use href="./images/icons.svg#checkmark"></use>
                   </svg>
