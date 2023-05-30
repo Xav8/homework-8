@@ -90,7 +90,7 @@
             <button
               data-modal-open
               type="button"
-              class="main__hero-section__button font__weight--700"
+              class="main__hero-section__button font__weight--700 letter__spacing--medium"
             >
               Request our service
             </button>
@@ -492,14 +492,16 @@
     </div>
 
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="close-btn" data-modal-close>&times;</button>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-container">
+        <button class="modal-close-btn" data-modal-close>&times;</button>
 
         <!-- Modal form-->
         <div class="form-1__container">
           <form class="form-1" action="">
-            <h2 class="form-1__title font__weight--700 font__size--20">
+            <h2
+              class="form-1__title font__weight--700 font__size--20 letter__spacing--medium"
+            >
               Leave your information and we'll call you back
             </h2>
             <label
@@ -510,6 +512,8 @@
               <div class="form-1__label__input-container flex">
                 <input
                   class="form-1__label__input form-1__blue"
+                  name="form-1__name-1"
+                  id="form-1__name"
                   type="text"
                   required
                 />
@@ -527,6 +531,8 @@
               <div class="form-1__label__input-container flex">
                 <input
                   class="form-1__label__input form-1__blue"
+                  name="form-1__telephone-1"
+                  id="form-1__telephone"
                   type="tel"
                   required
                 />
@@ -544,6 +550,8 @@
               <div class="form-1__label__input-container flex">
                 <input
                   class="form-1__label__input form-1__blue"
+                  name="form-1__email-1"
+                  id="form-1__email"
                   type="email"
                   required
                 />
@@ -560,19 +568,17 @@
               Comments
               <textarea
                 class="form-1__label__textarea"
-                name=""
-                id=""
+                name="form-1__comment-1"
+                id="form-1__comment"
                 cols="30"
                 rows="10"
                 placeholder="Enter the text"
               ></textarea>
             </label>
 
-            <div
-              class="form-1__checkbox-label font__size--14 font__color--secondary flex"
-            >
+            <div class="form-1__checkbox-label-container">
               <label
-                class="form-1__checkbox-label"
+                class="form-1__checkbox-label font__size--14 font__color--secondary"
                 for="form-1__terms-and-conditions"
               >
                 <div class="form-1__checkbox-label__checkbox__container">
