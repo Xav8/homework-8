@@ -20,7 +20,7 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -100,7 +100,7 @@
         <article class="main__why-us section--why">
           <ul class="flex list">
             <li>
-              <svg class="why-us__svg">
+              <svg class="why-us__svg" width="70" height="70">
                 <use href="./images/icons.svg#antenna"></use>
               </svg>
               <h2
@@ -117,7 +117,7 @@
               </p>
             </li>
             <li>
-              <svg class="why-us__svg">
+              <svg class="why-us__svg" width="70" height="70">
                 <use href="./images/icons.svg#clock"></use>
               </svg>
               <h2
@@ -134,7 +134,7 @@
               </p>
             </li>
             <li>
-              <svg class="why-us__svg">
+              <svg class="why-us__svg" width="70" height="70">
                 <use href="./images/icons.svg#diagram"></use>
               </svg>
               <h2
@@ -151,7 +151,7 @@
               </p>
             </li>
             <li>
-              <svg class="why-us__svg">
+              <svg class="why-us__svg" width="70" height="70">
                 <use href="./images/icons.svg#astronaut"></use>
               </svg>
               <h2
@@ -492,103 +492,105 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal is-hidden" data-modal>
+    <div class="modal modal__is-hidden" data-modal>
       <div class="modal-container">
         <button class="modal-close-btn" data-modal-close>&times;</button>
 
-        <!-- Modal form-->
-        <div class="form-1__container">
-          <form class="form-1" action="">
+        <!-- Modal-1 form-->
+        <div class="moda-1__form-1__container">
+          <form class="moda-1__form-1" action="">
             <h2
-              class="form-1__title font__weight--700 font__size--20 letter__spacing--medium"
+              class="moda-1__form-1__title font__weight--700 font__size--20 letter__spacing--medium"
             >
               Leave your information and we'll call you back
             </h2>
             <label
-              class="form-1__label font__size--12 font__color--secondary"
-              for="form-1__name"
+              class="moda-1__form-1__label font__size--12 font__color--secondary"
+              for="moda-1__form-1__name"
             >
               Name
-              <div class="form-1__label__input-container flex">
+              <div class="moda-1__form-1__label__input-container flex">
                 <input
-                  class="form-1__label__input form-1__blue"
-                  name="form-1__name-1"
-                  id="form-1__name"
+                  class="moda-1__form-1__label__input moda-1__form-1__blue"
+                  name="moda-1__form-1__name-1"
+                  id="moda-1__form-1__name"
                   type="text"
                   required
                 />
-                <svg class="form-1__label__input__svg">
+                <svg class="moda-1__form-1__label__input__svg">
                   <use href="./images/icons.svg#form-person"></use>
                 </svg>
               </div>
             </label>
 
             <label
-              class="form-1__label font__size--12 font__color--secondary"
-              for="form-1__telephone"
+              class="moda-1__form-1__label font__size--12 font__color--secondary"
+              for="moda-1__form-1__telephone"
             >
               Telephone
-              <div class="form-1__label__input-container flex">
+              <div class="moda-1__form-1__label__input-container flex">
                 <input
-                  class="form-1__label__input form-1__blue"
-                  name="form-1__telephone-1"
-                  id="form-1__telephone"
+                  class="moda-1__form-1__label__input moda-1__form-1__blue"
+                  name="moda-1__form-1__telephone-1"
+                  id="moda-1__form-1__telephone"
                   type="tel"
                   required
                 />
-                <svg class="form-1__label__input__svg">
+                <svg class="moda-1__form-1__label__input__svg">
                   <use href="./images/icons.svg#form-phone"></use>
                 </svg>
               </div>
             </label>
 
             <label
-              class="form-1__label font__size--12 font__color--secondary"
-              for="form-1__email"
+              class="moda-1__form-1__label font__size--12 font__color--secondary"
+              for="moda-1__form-1__email"
             >
               E-mail
-              <div class="form-1__label__input-container flex">
+              <div class="moda-1__form-1__label__input-container flex">
                 <input
-                  class="form-1__label__input form-1__blue"
-                  name="form-1__email-1"
-                  id="form-1__email"
+                  class="moda-1__form-1__label__input moda-1__form-1__blue"
+                  name="moda-1__form-1__email-1"
+                  id="moda-1__form-1__email"
                   type="email"
                   required
                 />
-                <svg class="form-1__label__input__svg">
+                <svg class="moda-1__form-1__label__input__svg">
                   <use href="./images/icons.svg#form-email"></use>
                 </svg>
               </div>
             </label>
 
             <label
-              class="form-1__label font__size--12 font__color--secondary"
-              for="form-1__comment"
+              class="moda-1__form-1__label font__size--12 font__color--secondary"
+              for="moda-1__form-1__comment"
             >
               Comments
               <textarea
-                class="form-1__label__textarea"
-                name="form-1__comment-1"
-                id="form-1__comment"
+                class="moda-1__form-1__label__textarea"
+                name="moda-1__form-1__comment-1"
+                id="moda-1__form-1__comment"
                 cols="30"
                 rows="10"
                 placeholder="Enter the text"
               ></textarea>
             </label>
 
-            <div class="form-1__checkbox-label-container">
+            <div class="moda-1__form-1__checkbox-label-container">
               <label
-                class="form-1__checkbox-label font__size--14 font__color--secondary"
-                for="form-1__terms-and-conditions"
+                class="moda-1__form-1__checkbox-label font__size--14 font__color--secondary"
+                for="moda-1__form-1__terms-and-conditions"
               >
-                <div class="form-1__checkbox-label__checkbox__container">
+                <div
+                  class="moda-1__form-1__checkbox-label__checkbox__container"
+                >
                   <input
-                    class="form-1__checkbox-label__checkbox"
+                    class="moda-1__form-1__checkbox-label__checkbox"
                     type="checkbox"
-                    id="form-1__terms-and-conditions"
+                    id="moda-1__form-1__terms-and-conditions"
                   />
                   <svg
-                    class="form-1__checkbox-label__checkbox__checkmark"
+                    class="moda-1__form-1__checkbox-label__checkbox__checkmark"
                     width="14"
                     height="14"
                   >
@@ -599,7 +601,7 @@
               <span
                 >I agree with the letter and accept the
                 <a
-                  class="form-1__checkbox-label__terms-and-conditions"
+                  class="moda-1__form-1__checkbox-label__terms-and-conditions"
                   href="#terms-and-conditions"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -609,7 +611,7 @@
             </div>
           </form>
           <button
-            class="form-1__button font__color--white font__size--16 font__weight--700"
+            class="moda-1__form-1__button font__color--white font__size--16 font__weight--700"
             type="submit"
           >
             Send
