@@ -1,8 +1,8 @@
-﻿# goit-markup-hw-07
+﻿# goit-markup-hw-08
 
 ---
 
 https://xav8.github.io/goit-markup-hw-08/
 
 ---
-Did the seventh homework assignment
+Did the eight homework assignment
