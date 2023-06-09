@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+
+  overflow-x: hidden;
+} /* CHECKED */
+/* ------------------------------ HW8 ------------------------------ */
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  .container {
+    min-width: 738px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .container {
+    min-width: 1200px;
+    max-width: 1600px;
+  }
+}
+/* CHECKED */

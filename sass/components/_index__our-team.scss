@@ -1,0 +1,90 @@
+/* Our team */
+.main__our-team {
+  background-color: var(--background-secondary);
+
+  text-align: center;
+
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+} /* CHECKED */
+
+.main__our-team__heading {
+  line-height: 2.25;
+
+  width: 100%;
+}
+
+.main__our-team__caption {
+  line-height: 2.25;
+}
+
+.main__our-team__caption a {
+  text-decoration: none;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .main__our-team {
+    display: grid;
+    grid-template-columns: 450px;
+    gap: 30px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .main__our-team figure {
+    width: 450px;
+    height: 622px;
+  }
+
+  figure img {
+    width: 100%;
+  }
+
+  figure figcaption {
+    padding: 20px 24px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  .main__our-team {
+    display: grid;
+    grid-template-columns: 354px 354px;
+    gap: 30px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .main__our-team figure {
+    width: 100%;
+    height: 536px;
+  }
+
+  figure img {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .main__our-team figure {
+    width: 270px;
+    height: 430px;
+  }
+
+  .main__our-team figure:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .main__our-team__caption div {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+/* CHECKED */

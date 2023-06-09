@@ -1,0 +1,32 @@
+/* Logo */
+.logo {
+  font-size: 26px;
+  line-height: 1.9;
+  font-family: "Raleway", sans-serif, serif;
+
+  padding: 24px 0 25px 0;
+} /* CHECKED */
+
+.logo--light {
+  color: var(--text-white);
+} /* CHECKED */
+
+.logo--blue {
+  color: var(--brand-blue);
+} /* CHECKED */
+
+/* ------------------------------ HW8 ------------------------------ */
+
+@media screen and (max-width: $breakpoint-mobile) {
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .logo {
+    margin-right: 93px;
+    margin-left: 215px;
+  }
+}
+/* CHECKED */

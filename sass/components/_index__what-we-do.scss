@@ -1,0 +1,110 @@
+/* What we do */
+.main__what-we-do {
+  background-color: var(--background-white);
+
+  text-align: center;
+
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.main__what-we-do figure:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main__what-we-do__heading {
+  line-height: 2.25;
+
+  width: 100%;
+}
+
+.what-we-do__container-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.what-we-do__overlay {
+  position: absolute;
+  bottom: 3.5px;
+}
+
+.what-we-do__overlay p {
+  padding-top: 20px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  width: 370px;
+  height: 50px;
+}
+
+.section {
+  display: flex;
+  min-width: 1600px;
+
+  padding: 94px 0 94px 0;
+}
+
+figure.border {
+  overflow: hidden;
+}
+
+.figure__container-overlay {
+  max-height: 294px;
+
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.figure__container-overlay:hover .figure__overlay {
+  top: 0;
+
+  transition: var(--transition-default);
+}
+
+.figure__overlay {
+  position: absolute;
+  top: 100%;
+
+  line-height: 1.6;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: top var(--transition-default);
+}
+
+.figure__overlay p {
+  padding: 63px 24px 91px 24px;
+}
+
+.figure__border {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .main__what-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  .main__what-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+}
+/* CHECKED */
+
+/* WORKS AS INTENDED */

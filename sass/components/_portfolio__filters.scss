@@ -1,0 +1,70 @@
+/* PORTFOLIO.HTML */
+/* Filters */
+.main__filters__button,
+.main__filters__button:active {
+  cursor: pointer;
+  background-color: var(--background-secondary);
+  line-height: 1.6;
+}
+
+.main__filters__button:hover,
+.main__filters__button:focus {
+  background-color: #2195f3;
+  color: var(--text-white);
+
+  transition: var(--transition-default);
+}
+
+.main__filters__buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+/* MOBILE */
+@media screen and (max-width: $breakpoint-mobile) {
+  .main__filters__button {
+    padding: 5px 10px 5px 10px;
+    margin: 60px 10px 40px 0;
+
+    background: #f5f4fa;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .flex--portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+
+    padding-left: 22.5px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: $breakpoint-desktop) {
+  .flex--portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+
+    padding-left: 185px;
+  }
+
+  .main__filters__button {
+    padding: 5px 20px 5px 20px;
+    margin: 94px 8px 50px 0;
+
+    background: #f5f4fa;
+    border: none;
+  }
+}
+
+/* CHECKED */
+
+/* WORKS AS INTENDED */

@@ -1,0 +1,41 @@
+@media screen and (min-width: $breakpoint-desktop) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  body {
+    max-width: 500px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+  body {
+    min-width: $tablet__width-min;
+    max-width: $tablet__width-max;
+
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-widths {
+    max-width: $tablet__width-min;
+  }
+}

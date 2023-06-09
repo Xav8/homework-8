@@ -1,0 +1,61 @@
+.contacts:hover,
+.contacts:focus {
+  color: var(--brand-blue);
+
+  transition: var(--transition-default);
+}
+
+.contacts--top {
+  display: flex;
+  flex-wrap: wrap;
+
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+
+  align-content: center;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+/* MOBILE */
+@media screen and (max-width: $breakpoint-mobile) {
+  .contacts__address {
+    color: var(--text-white);
+    font-style: normal;
+    line-height: 1;
+    margin: 15px 0 0 0;
+  }
+
+  .contacts {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: $breakpoint-desktop) {
+  .contacts__address {
+    color: var(--text-white);
+    font-style: normal;
+    line-height: 1;
+    margin: 15px 0 0 215px;
+  }
+
+  .contacts {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+
+    margin-left: 215px;
+  }
+}
+
+/* CHECKED */
+
+/* WORKS AS INTENDED */

@@ -1,0 +1,79 @@
+/* Why us */
+
+.main__why-us__heading {
+  line-height: 1;
+  width: 270px;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+/* MOBILE */
+@media screen and (max-width: $breakpoint-mobile) {
+  .main__why-us {
+    background-color: var(--background-white);
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      gap: 30px;
+    }
+  }
+
+  .main__why-us__paragraph {
+    line-height: 1.5;
+    max-width: 400px;
+
+    text-align: left;
+  }
+
+  .main__why-us__heading {
+    line-height: 1;
+    width: 100%;
+
+    margin: 0;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: $breakpoint-desktop) {
+  .main__why-us {
+    background-color: var(--background-white);
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .main__why-us li:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+
+  .section--why {
+    justify-content: center;
+
+    padding: 94px 0 0 0;
+
+    width: 100%;
+  }
+
+  .main__why-us__paragraph {
+    line-height: 1.5;
+    width: 270px;
+  }
+}
+
+/* CHECKED */
+
+/* WORKS AS INTENDED */

@@ -1,0 +1,123 @@
+.border--head {
+  border-bottom: 1px solid #ececec;
+} /* CHECKED */
+
+.header {
+  background-color: var(--background-white);
+} /* CHECKED */
+
+/* ------------------------------ HW8 ------------------------------ */
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .header__navigation,
+  .header__svg,
+  .header__navigation__element,
+  .header__anchor,
+  .header-underline {
+    display: none;
+  }
+
+  header {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .header {
+    background-color: var(--background-white);
+    align-items: center;
+  }
+
+  .header__navigation {
+    padding: 32px 0 32px 0;
+    margin-right: 50px;
+  }
+
+  .header__navigation:last-child {
+    margin-right: 385px;
+  }
+
+  .header__svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .header__navigation__element,
+  .header__navigation__element:active,
+  .header__navigation__element:visited {
+    display: block;
+    position: relative;
+
+    cursor: pointer;
+    color: var(--text-default);
+    line-height: 1;
+    text-decoration: none;
+
+    margin-right: 50px;
+  }
+
+  .header__navigation__element:hover,
+  .header__navigation__element:focus,
+  .contacts:hover,
+  .contacts:focus {
+    color: var(--brand-blue);
+
+    transition: var(--transition-default);
+  }
+
+  .header__anchor {
+    flex-wrap: wrap;
+    align-content: center;
+
+    width: 180px;
+    height: 30px;
+
+    margin-right: 40px;
+  }
+
+  .header-underline {
+    display: none;
+    position: absolute;
+
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    background-color: #2195f3;
+    border-radius: 10px;
+
+    margin-top: 38px;
+  }
+
+  .header__navigation__element:hover .header-underline,
+  .header__navigation__element:focus {
+    display: block;
+
+    transition: var(--transition-default);
+  }
+
+  /* ------------------------------ HW5 ------------------------------ */
+
+  .header__navigation__element--active a,
+  .header__navigation__element--active a:visited {
+    color: var(--brand-blue);
+  }
+  .header__navigation__element--active ::after {
+    pointer-events: none;
+
+    position: absolute;
+    top: 54px;
+
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--brand-blue);
+
+    border-radius: 2px;
+  }
+}

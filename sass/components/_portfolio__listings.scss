@@ -1,0 +1,30 @@
+.listings__left--margins {
+  margin: 0 0 0 215px;
+}
+
+/* Listings */
+.main__listings__heading {
+  line-height: 2.25;
+}
+
+.main__listings__paragraph {
+  line-height: 1.9;
+}
+
+.border {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+
+  padding-bottom: 20px;
+  margin: 0 30px 30px 30px;
+  width: 370px;
+
+  box-sizing: border-box;
+}
+
+.border:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: var(--transition-default);
+}
