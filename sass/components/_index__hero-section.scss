@@ -58,8 +58,9 @@
 @media screen and (max-width: $breakpoint-mobile) {
   .main__hero-section {
     margin-top: 0;
-    width: $desktop__width-max;
     background: url(../images/hero-background_mobile.jpg) var(--brand-gray);
+
+    width: 480px;
   }
 
   .main__hero-section__container {

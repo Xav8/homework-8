@@ -59,3 +59,28 @@
 .modal-close-btn:focus {
   color: var(--brand-blue);
 }
+
+.is-open {
+  display: block;
+}
+
+/* ------------------------------ HW8 ------------------------------ */
+
+/* MOBILE */
+@media screen and (max-width: $breakpoint-mobile) {
+  .is-hidden {
+    visibility: visible;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: $breakpoint-desktop) {
+}
+
+/* CHECKED */
+
+/* WORKS AS INTENDED */

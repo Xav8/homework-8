@@ -154,3 +154,28 @@
 
   transition: background-color var(--transition-default);
 }
+
+/* ------------------------------ HW8 ------------------------------ */
+
+/* MOBILE */
+@media screen and (max-width: $breakpoint-mobile) {
+  .moda-1__form-1__container__form-1__checkbox-label {
+    font-size: 12px;
+  }
+
+  .moda-1__form-1__container {
+    margin: 0 15px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: $breakpoint-desktop) {
+}
+
+/* CHECKED */
+
+/* WORKS AS INTENDED */

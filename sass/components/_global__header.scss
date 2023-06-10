@@ -122,10 +122,41 @@
   .header {
     max-width: $mobile__width-max;
     width: 100%;
+    max-width: 480px;
+    min-width: 450px;
 
-    justify-content: space-between;
+    align-items: center;
 
     padding: 10px 15px;
+
+    .logo {
+      position: absolute;
+      left: 15px;
+    }
+
+    .header__menu-mobile {
+      position: absolute;
+      right: 15px;
+    }
+
+    .header__menu__container__social-links {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      gap: 10px;
+
+      max-width: 450px;
+
+      a {
+        font-size: 16px;
+
+        color: #2196f3;
+
+        text-decoration: none;
+      }
+    }
 
     nav {
       height: 40px;
@@ -137,6 +168,22 @@
     }
 
     .header__contacts {
+      display: none;
+    }
+
+    .contacts--top {
+      display: none;
+    }
+
+    .header__svg {
+      display: none;
+    }
+
+    .border--head {
+      display: none;
+    }
+
+    .header__anchor {
       display: none;
     }
   }

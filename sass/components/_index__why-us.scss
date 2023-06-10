@@ -10,26 +10,51 @@
 /* MOBILE */
 @media screen and (max-width: $breakpoint-mobile) {
   .main__why-us {
+    width: 100%;
+    max-width: 480px;
+    min-width: 450px;
+
     background-color: var(--background-white);
 
     margin-top: 60px;
-    margin-bottom: 60px;
+
+    padding: 0 15px 60px 15px;
 
     ul {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
 
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       text-align: center;
 
       gap: 30px;
+
+      padding: 0 15px 60px 15px;
+
+      li {
+        max-width: 450px;
+
+        svg {
+          padding: 25px 120px;
+          width: 100%;
+
+          h2 {
+            text-align: center;
+          }
+
+          p {
+            text-align: left;
+            line-height: 1.5;
+          }
+        }
+      }
     }
   }
 
   .main__why-us__paragraph {
     line-height: 1.5;
-    max-width: 400px;
 
     text-align: left;
   }

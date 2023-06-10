@@ -5,8 +5,6 @@
   font-family: "Raleway", sans-serif, serif;
   text-decoration: none;
   color: var(--text-black);
-
-  padding: 24px 0 25px 0;
 } /* CHECKED */
 
 .logo--light {
@@ -29,6 +27,8 @@
   .logo {
     margin-right: 93px;
     margin-left: 215px;
+
+    padding: 24px 0 25px 0;
   }
 }
 /* CHECKED */

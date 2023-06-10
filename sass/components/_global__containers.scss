@@ -5,15 +5,16 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
-
-  overflow-x: hidden;
 } /* CHECKED */
 /* ------------------------------ HW8 ------------------------------ */
 
 @media screen and (max-width: $breakpoint-mobile) {
   .container {
     box-sizing: border-box;
-    max-width: $mobile__width-min;
+    min-width: 450px;
+    max-width: 480px;
+
+    padding: 0 15px;
   }
 
   .main {
@@ -22,8 +23,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    max-width: $mobile__width-max;
   }
 }
 

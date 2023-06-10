@@ -11,13 +11,18 @@
 
 @media screen and (max-width: $breakpoint-mobile) {
   body {
-    max-width: $mobile__width-max;
+    max-width: 480px;
+    min-width: 450px;
+
+    align-self: center;
   }
 
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    max-width: 450px;
   }
 }
 
@@ -25,17 +30,5 @@
   body {
     min-width: $tablet__width-min;
     max-width: $tablet__width-max;
-
-    overflow-x: hidden;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .section-widths {
-    max-width: $tablet__width-min;
   }
 }
