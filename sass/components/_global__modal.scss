@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   background-color: #00000033;
 }
@@ -25,6 +25,8 @@
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  margin: 0 15px;
 }
 
 .modal__is-hidden {
@@ -70,6 +72,14 @@
 @media screen and (max-width: $breakpoint-mobile) {
   .is-hidden {
     visibility: visible;
+  }
+  .modal-container {
+    width: 70vw;
+    height: 90vh;
+  }
+
+  .is-open {
+    display: block;
   }
 }
 
