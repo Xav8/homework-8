@@ -1,6 +1,9 @@
 /* Hero Section */
 .main__hero-section {
-  background: url(/images/hero-bg.jpg) var(--brand-gray);
+  height: 100%;
+
+  text-align: center;
+
   color: var(--text-white);
 } /* CHECKED */
 
@@ -15,6 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 
   text-align: center;
 } /* CHECKED */
@@ -25,26 +29,28 @@
 } /* CHECKED */
 
 .main__hero-section__button {
-  width: 200px;
-  height: 50px;
-
-  border: none;
-  border-radius: 5px;
-} /* CHECKED */
-
-.main__hero-section__button,
-.main__hero-section__button:active {
+  transition: background-color var(--transition-default);
   cursor: pointer;
-  background-color: var(--brand-blue);
+
   color: var(--text-white);
+  background-color: var(--brand-blue);
   line-height: 1.9;
-} /* CHECKED */
 
-.main__hero-section__button:hover,
-.main__hero-section__button:focus {
-  background-color: #2195f3ee;
+  padding: 10px 20px;
 
-  transition: var(--transition-default);
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
+    0px 2px 2px #0000001f;
+
+  .main__hero-section__button:active {
+    @extend .main__hero-section__button;
+  }
+
+  .main__hero-section__button:hover,
+  .main__hero-section__button:focus {
+    background-color: var(--brand-blue-hover);
+  }
 } /* CHECKED */
 
 /* ------------------------------ HW8 ------------------------------ */
@@ -52,16 +58,25 @@
 @media screen and (max-width: $breakpoint-mobile) {
   .main__hero-section {
     margin-top: 0;
+    width: $desktop__width-max;
+    background: url(../images/hero-background_mobile.jpg) var(--brand-gray);
   }
 
   .main__hero-section__container {
-    background-size: cover;
-
-    padding: 118px 0 118px 0;
+    max-width: $mobile__width-max;
   }
 
   .main__hero-section__heading {
+    width: 360px;
+
     font-size: 26px;
+    line-height: 1.8;
+
+    margin: 118px 0 0 0;
+  }
+
+  .main__hero-section__button {
+    margin: 0 0 118px 0;
   }
 }
 
@@ -81,7 +96,8 @@
 
 @media screen and (min-width: $breakpoint-desktop) {
   .main__hero-section {
-    background-size: cover;
+    width: $desktop__width-max;
+    background: url(../images/hero-background.jpg) var(--brand-gray);
   }
 
   .main__hero-section__container {

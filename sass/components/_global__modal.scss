@@ -32,6 +32,10 @@
   visibility: hidden;
 }
 
+.is-hidden {
+  visibility: visible;
+}
+
 .modal-close-btn {
   transition: color var(--transition-default);
   cursor: pointer;

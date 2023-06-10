@@ -27,10 +27,96 @@
     <div class="container">
       <!-- Header -->
       <header class="header flex border--head">
-        <a class="logo font__weight--700"
+        <a href="#home" class="logo font__weight--700 letter__spacing--medium"
           ><span class="logo--blue">Web</span>Studio</a
         >
         <nav>
+          <a
+            href="#menu-mobile"
+            class="header__menu-mobile js-open-menu"
+            aria-expanded="false"
+          >
+            <svg width="24" height="16">
+              <use href="./images/icons.svg#menu-mobile"></use>
+            </svg>
+          </a>
+          <div class="js-menu-container header__menu">
+            <button
+              class="header__menu__container__close-button js-close-menu"
+              type="button"
+            >
+              &times;
+            </button>
+            <div class="header__menu__container">
+              <ul class="header__menu__container__navigation">
+                <li class="header__menu__container__navigation__element">
+                  <a href="./index.html#home">Studio</a>
+                </li>
+                <li class="header__menu__container__navigation__element">
+                  <a href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__menu__container__navigation__element">
+                  <a href="#contacts">Contacts</a>
+                </li>
+              </ul>
+              <ul class="header__menu__container__contacts">
+                <li><a href="tel:+12127724150">+1&nbsp;212-772-4150</a></li>
+                <li>
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="header__menu__container__social-links">
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="blank"
+                    rel="nofollow noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <span class="header__menu__container__social-links__v-bar"
+                    >|</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.twitter.com/"
+                    target="blank"
+                    rel="nofollow noopener noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <span class="header__menu__container__social-links__v-bar"
+                    >|</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="blank"
+                    rel="nofollow noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <span class="header__menu__container__social-links__v-bar"
+                    >|</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    target="blank"
+                    rel="nofollow noopener noreferrer"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <script src="./js/mobile-menu.js"></script>
           <ul class="header__navigation flex list">
             <li class="header__navigation__element--active">
               <a
@@ -83,14 +169,15 @@
         <!-- Hero section -->
         <section class="main__hero-section">
           <div class="main__hero-section__container">
-            <h1 class="main__hero-section__heading font__weight--900">
-              EFFECTIVE SOLUTIONS FOR <br />
-              YOUR BUSINESS
+            <h1
+              class="main__hero-section__heading font__weight--900 font__letter-spacing--high"
+            >
+              EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
             </h1>
             <button
-              data-modal-open
               type="button"
-              class="main__hero-section__button font__weight--700 letter__spacing--medium"
+              class="main__hero-section__button font__size--16 font__weight--700 font__letter-spacing--high"
+              data-modal-open
             >
               Request our service
             </button>

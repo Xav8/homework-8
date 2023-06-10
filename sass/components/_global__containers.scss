@@ -12,7 +12,18 @@
 
 @media screen and (max-width: $breakpoint-mobile) {
   .container {
-    max-width: 480px;
+    box-sizing: border-box;
+    max-width: $mobile__width-min;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: $mobile__width-max;
   }
 }
 

@@ -6,19 +6,139 @@
   background-color: var(--background-white);
 } /* CHECKED */
 
+.header__menu {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff;
+}
+
+.header__menu-mobile {
+  color: currentColor;
+  display: block;
+
+  width: 24px;
+  height: 16px;
+
+  padding: 12px 8px;
+}
+
+.header__menu__container {
+  display: grid;
+  gap: 60px;
+
+  font-weight: 500;
+
+  height: 100%;
+
+  margin: 40px 48px;
+
+  a {
+    color: #212121;
+    line-height: 1.2;
+
+    text-decoration: none;
+  }
+
+  .header__menu__container:hover,
+  .header__menu__container:focus {
+    color: #2196f3;
+  }
+}
+
+.header__menu__container__navigation {
+  align-self: start;
+  @include flex(column nowrap, flex-start, flex-start);
+  gap: 32px;
+}
+
+.header__menu__container__navigation__element {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header__menu__container__contacts {
+  align-self: flex-end;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+
+  font-size: 24px;
+
+  li:first-child a {
+    color: #2196f3;
+    font-size: 34px;
+  }
+
+  .header__menu__container__social-links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 10px;
+
+    max-width: 450px;
+
+    a {
+      font-size: 16px;
+
+      color: #2196f3;
+
+      text-decoration: none;
+    }
+  }
+
+  .header__menu__container__social-links__v-bar {
+    color: #21212133;
+  }
+
+  .header__menu__container__close-button {
+    cursor: pointer;
+    font-size: 38px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* ------------------------------ HW8 ------------------------------ */
 
 @media screen and (max-width: $breakpoint-mobile) {
-  .header__navigation,
-  .header__svg,
-  .header__navigation__element,
-  .header__anchor,
-  .header-underline {
-    display: none;
-  }
+  .header {
+    max-width: $mobile__width-max;
+    width: 100%;
 
-  header {
-    padding: 0 15px;
+    justify-content: space-between;
+
+    padding: 10px 15px;
+
+    nav {
+      height: 40px;
+      width: 40px;
+    }
+
+    .header__navigation {
+      display: none;
+    }
+
+    .header__contacts {
+      display: none;
+    }
   }
 }
 
@@ -29,6 +149,14 @@
   .header {
     background-color: var(--background-white);
     align-items: center;
+
+    .header__menu-mobile {
+      display: none;
+    }
+
+    .js-menu-container {
+      display: none;
+    }
   }
 
   .header__navigation {
